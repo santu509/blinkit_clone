@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blinkit</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media.css">
+</head>
+
+<body>
+    <header>
+        <div class="headerleft">
+            <div class="logo">
+                <a href="#"><svg width="134" height="30" viewBox="0 0 114 30" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M14.3342 7.186C16.2619 7.186 17.9832 7.66644 19.4978 8.62732C21.0262 9.57447 22.2242 10.9197 23.0917 12.663C23.9316 14.3377 24.3516 16.3075 24.3516 18.5724C24.3516 20.7687 23.9316 22.7316 23.0917 24.4612C22.2517 26.1908 21.0675 27.5429 19.5391 28.5175C17.9969 29.5058 16.2619 30 14.3342 30C12.9297 30 11.6078 29.7117 10.3685 29.1352C9.12927 28.5587 8.06901 27.7488 7.18775 26.7056V29.4852H0V0H7.18775V10.4598C8.06901 9.41661 9.12927 8.61359 10.3685 8.05079C11.6078 7.47426 12.9297 7.186 14.3342 7.186ZM12.1861 24.0494C13.2051 24.0494 14.1139 23.8161 14.9125 23.3493C15.7112 22.8826 16.3377 22.2306 16.7921 21.3933C17.2465 20.5697 17.4737 19.6294 17.4737 18.5724C17.4737 17.5429 17.2465 16.6095 16.7921 15.7721C16.3377 14.9348 15.7112 14.2828 14.9125 13.8161C14.1139 13.3493 13.2051 13.116 12.1861 13.116C11.2223 13.116 10.3617 13.3493 9.60432 13.8161C8.84699 14.269 8.2549 14.9073 7.82804 15.731C7.40118 16.5683 7.18775 17.5154 7.18775 18.5724C7.18775 19.6294 7.40118 20.5765 7.82804 21.4139C8.2549 22.2375 8.84699 22.8826 9.60432 23.3493C10.3617 23.8161 11.2223 24.0494 12.1861 24.0494Z"
+                            fill="#F8CB46"></path>
+                        <path d="M25.3356 29.4852V0H32.5233V29.4852H25.3356Z" fill="#F8CB46"></path>
+                        <path d="M34.5607 29.4852V7.68016H41.7071V29.4852H34.5607Z" fill="#F8CB46"></path>
+                        <path
+                            d="M57.2319 7.186C58.7603 7.186 60.1372 7.5429 61.3627 8.25669C62.5882 8.95676 63.5521 9.94509 64.2544 11.2217C64.9291 12.512 65.2664 13.9739 65.2664 15.6074V29.4852H58.4092V17.2135C58.4092 16.4173 58.2508 15.7104 57.9341 15.0927C57.6312 14.4612 57.1974 13.9739 56.6329 13.6307C56.0821 13.2876 55.4349 13.116 54.6914 13.116C53.9891 13.116 53.3419 13.2876 52.7498 13.6307C52.1577 13.9602 51.6965 14.4132 51.366 14.9897C51.0218 15.5388 50.8496 16.1839 50.8496 16.9252L50.8083 29.4852H43.6619V7.68016H50.8083V10.1716C51.483 9.23816 52.3849 8.51064 53.5141 7.98902C54.6432 7.45367 55.8824 7.186 57.2319 7.186Z"
+                            fill="#F8CB46"></path>
+                        <path
+                            d="M81.0597 17.2135L89.1769 29.4852H81.0597L76.3091 21.7639L74.1198 24.2965V29.4852H66.932V0H74.1198V16.2869L81.0184 7.68016H89.1356L81.0597 17.2135Z"
+                            fill="#F8CB46"></path>
+                        <path d="M34.5569 0.00232667H41.7267V5.59207H34.5569V0.00232667Z" fill="#F8CB46"></path>
+                        <path d="M90.3176 29.4198V7.61479H97.464V29.4198H90.3176Z" fill="#54B226"></path>
+                        <path
+                            d="M112.575 23.2634L114 27.855C113.353 28.4727 112.534 28.9737 111.542 29.3581C110.564 29.7424 109.607 29.9346 108.671 29.9346C107.322 29.9346 106.117 29.6395 105.057 29.0492C103.996 28.4452 103.17 27.6079 102.578 26.5372C101.986 25.494 101.69 24.2929 101.69 22.9339V13.3183H98.819V7.61479H101.69V0.00241089H108.547V7.61479H113.071V13.3183H108.547V21.6161C108.547 22.3162 108.733 22.8859 109.105 23.3251C109.477 23.7644 109.952 23.984 110.53 23.984C110.943 23.984 111.329 23.9223 111.687 23.7987C112.045 23.6752 112.341 23.4967 112.575 23.2634Z"
+                            fill="#54B226"></path>
+                        <path d="M90.2609 0.00241089H97.4307V5.59215H90.2609V0.00241089Z" fill="#54B226"></path>
+                    </svg></a>
+            </div>
+            <div class="headadd">
+                <h3>Delivery in 8 minutes</h3>
+                <p>Kolkata, Westbengal, India</p>
+            </div>
+        </div>
+
+        <form class="searchbox">                            
+            <button class="searchbtn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="search..." class="searchbtninput">
+            </button>
+
+            <div class="headerbtn">
+                <button class="headerbtn1"><a href="#"> Login</button></a>
+                <a href="#"> <button class="headerbtn2">
+                        <i class="fa-solid fa-cart-plus addtocart"></i> My Cart</button></a>
+            </div>
+        </form>
+    </header>
+    <section class="banner">
+        <img src="asset/baner.webp">
+    </section>
+    <section class="baneritem">
+        <div class="baneritems">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/layout-engine/2023-07/pharmacy-WEB.jpg"
+                alt="">
+        </div>
+        <div class="baneritems">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/layout-engine/2023-07/Pet-Care_WEB.jpg" alt="">
+        </div>
+        <div class="baneritems">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/layout-engine/2023-03/babycare-WEB.jpg" alt="">
+        </div>
+    </section>
+
+    <!-- catagory section  -->
+     <section class="catagorymain">
+        <div class="catagoryitem">
+            <img src="asset/c1.avif" alt="">
+        </div>
+        <div class="catagoryitem">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-2_10.png" alt="">
+        </div>
+        <div class="catagoryitem">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-3_9.png">
+        </div>
+        <div class="catagoryitem">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-4_9.png" alt="">
+        </div>
+        <div class="catagoryitem">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-5_4.png" alt="">
+        </div>
+        <div class="catagoryitem">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-6_5.png" alt="">
+        </div>
+        <div class="catagoryitem">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-7_3.png" alt="">
+        </div>
+        <div class="catagoryitem">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-8_4.png" alt="">
+        </div>
+        <div class="catagoryitem">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-10.png" alt="">
+        </div>
+        <div class="catagoryitem">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-9_3.png" alt="">
+        </div>
+        <div class="catagoryitem">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-11.png" alt="">
+        </div>
+        <div class="catagoryitem">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-12.png" alt="">
+        </div>
+        <div class="catagoryitem">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-13.png" alt="">
+        </div>
+        <div class="catagoryitem">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-14.png" alt="">
+        </div>
+        <div class="catagoryitem">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-15.png" alt="">
+        </div>
+        <div class="catagoryitem">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-16.png" alt="">
+        </div>
+        <div class="catagoryitem">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-17.png" alt="">
+        </div>
+        <div class="catagoryitem">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-18.png" alt="">
+        </div>
+        <div class="catagoryitem">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-19.png" alt="">
+        </div>
+        <div class="catagoryitem">
+            <img src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-11/Slice-20.png" alt="">
+        </div>
+     </section>
+     <section class="mainpara1">
+     <h1>Dairy, Bread & Eggs</h1>
+    </section>
+     <!-- product section1 -->
+      <div class="productsection1">
+        <div class="productitem">
+            <div class="productitemimg">
+                <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/6ae62ec2-3b13-4fff-b052-2ff3d4ef2d16.jpg?ts=1726473593>
+           </div>
+            <div>
+                <p class="Productname">Amul Taaza Toned Fresh Milk</p>
+                <h3>₹50</h3>
+                <button class="productitembuybtn"> <a href="#">Buy Now</a></button>
+                <button class="productitemcartbtn"> <a href="#">Add Cart</a></button>
+            </div>
+           
+        </div>
+        <div class="productitem">
+            <div class="productitemimg">
+                <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/5ee4441d-9109-48fa-9343-f5ce82b905a6.jpg?ts=1706182143>
+           </div>
+            <div>
+                <div class="Productname">Amul Salted Butter in amul </div>
+                <h3>₹55</h3>
+               <button class="productitembuybtn"> <a href="#">Buy Now</a></button>
+                <button class="productitemcartbtn"> <a href="#">Add Cart</a></button>
+            </div>
+        </div>
+        <div class="productitem">
+            <div class="productitemimg">
+                <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/0be0d49a-4dae-408a-8786-afae1dd05cb1.jpg?ts=1707312314>
+           </div>
+            <div>
+                <div class="Productname">Moreish Classic White Bread</div>
+                <h3>₹35</h3>
+               <button class="productitembuybtn"> <a href="#">Buy Now</a></button>
+                <button class="productitemcartbtn"> <a href="#">Add Cart</a></button>
+            </div>
+        </div>
+        <div class="productitem">
+            <div class="productitemimg">
+                <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/349944a.jpg?ts=1690815133>
+           </div>
+            <div>
+                <div class="Productname">Amul Salted Butter in amul </div>
+                <h3>₹90</h3>
+               <button class="productitembuybtn"> <a href="#">Buy Now</a></button>
+                <button class="productitemcartbtn"> <a href="#">Add Cart</a></button>
+            </div>
+        </div>
+        <div class="productitem">
+            <div class="productitemimg">
+                <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/6d41a6e4-eb1b-413c-8e20-7b9e892e42f8.jpg?ts=1712325555>
+           </div>
+            <div>
+                <div class="Productname">Amul Salted Butter in amul </div>
+                <h3>₹28</h3>
+               <button class="productitembuybtn"> <a href="#">Buy Now</a></button>
+                <button class="productitemcartbtn"> <a href="#">Add Cart</a></button>
+            </div>
+        </div>
+        <div class="productitem">
+            <div class="productitemimg">
+                <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/4cd33103-f0f9-4529-b99b-8039aa6ce7fe.jpg?ts=1707312318>
+           </div>
+            <div>
+                <div class="Productname">Mother Dairy Mishti Doi</div>
+                <h3>₹32</h3>
+               <button class="productitembuybtn"> <a href="#">Buy Now</a></button>
+                <button class="productitemcartbtn"> <a href="#">Add Cart</a></button>
+            </div>
+        </div>
+        <div class="productitem">
+            <div class="productitemimg">
+                <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/8c625ba8-ff0d-4289-9379-5f0dc7605664.jpg?ts=1741352137>
+           </div>
+            <div>
+                <div class="Productname">Mother Dairy Mishti in milk</div>
+                <h3>₹89</h3>
+               <button class="productitembuybtn"> <a href="#">Buy Now</a></button>
+                <button class="productitemcartbtn"> <a href="#">Add Cart</a></button>
+            </div>
+        </div>
+        <div class="productitem">
+            <div class="productitemimg">
+                <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/63628a.jpg?ts=1690806392>
+           </div>
+            <div>
+                <div class="Productname">Amul Salted Butter (200 g)</div>
+                <h3>₹62</h3>
+               <button class="productitembuybtn"> <a href="#">Buy Now</a></button>
+                <button class="productitemcartbtn"> <a href="#">Add Cart</a></button>
+            </div>
+        </div>
+        <div class="productitem">
+            <div class="productitemimg">
+                <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/f34453f1-c4ee-42e2-a3b5-cdde4ceefa48.jpg?ts=1730959363>
+           </div>
+            <div>
+                <div class="Productname">Amul Pure Milk Cheese Slices</div>
+                <h3>₹120</h3>
+               <button class="productitembuybtn"> <a href="#">Buy Now</a></button>
+                <button class="productitemcartbtn"> <a href="#">Add Cart</a></button>
+            </div>
+        </div>
+        <div class="productitem">
+            <div class="productitemimg">
+                <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/5ee4441d-9109-48fa-9343-f5ce82b905a6.jpg?ts=1706182143>
+           </div>
+            <div>
+                <div class="Productname">Amul Taaza Toned Fresh Milk</div>
+                <h3>₹150</h3>
+               <button class="productitembuybtn"> <a href="#">Buy Now</a></button>
+                <button class="productitemcartbtn"> <a href="#">Add Cart</a></button>
+            </div>
+        </div>
+      </div>
+      <!-- product section2 -->
+      <section class="mainpara1">
+        <h1>Rolling paper & tobacco</h1>
+       </section>
+       <div class="productsection1">
+        <div class="productitem">
+            <div class="productitemimg">
+                <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/3e87fb13-dad1-4abb-b07c-4ff783562311.jpg?ts=1723107868>
+           </div>
+            <div>
+                <div class="Productname">Brown Rolling Paper (Small)</div>
+                <h3>₹25</h3>
+                <button class="productitembuybtn"> <a href="#">Buy Now</a></button>
+                <button class="productitemcartbtn"> <a href="#">Add Cart</a></button>
+            </div>
+           
+        </div>
+        <div class="productitem">
+            <div class="productitemimg">
+                <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/b6884d62-5b18-4bdc-8a92-761f8697533c.jpg?ts=1736847207>
+           </div>
+            <div>
+                <div class="Productname">Thrice a Day Black Edition </div>
+                <h3>₹49</h3>
+               <button class="productitembuybtn"> <a href="#">Buy Now</a></button>
+                <button class="productitemcartbtn"> <a href="#">Add Cart</a></button>
+            </div>
+        </div>
+        <div class="productitem">
+            <div class="productitemimg">
+                <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/b06b8269-b0f2-4887-8106-f49d5695fc12.jpg?ts=1720016904>
+           </div>
+            <div>
+                <div class="Productname">Perfect Rolled Cones (Natural)</div>
+                <h3>₹45</h3>
+               <button class="productitembuybtn"> <a href="#">Buy Now</a></button>
+                <button class="productitemcartbtn"> <a href="#">Add Cart</a></button>
+            </div>
+        </div>
+        <div class="productitem">
+            <div class="productitemimg">
+                <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/661d1bd8-2374-47ad-b231-af4842bd5d50.jpg?ts=17405609753>
+           </div>
+            <div>
+                <div class="Productname">Perforated Wide Tips Roach - Raw</div>
+                <h3>₹50</h3>
+               <button class="productitembuybtn"> <a href="#">Buy Now</a></button>
+                <button class="productitemcartbtn"> <a href="#">Add Cart</a></button>
+            </div>
+        </div>
+        <div class="productitem">
+            <div class="productitemimg">
+                <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/1f3d3cf5-cc98-477d-ad68-7b18bb15ae96.jpg?ts=1735813370>
+           </div>
+            <div>
+                <div class="Productname">Black Slim Rolling Paper </div>
+                <h3>Rs:28</h3>
+               <button class="productitembuybtn"> <a href="#">Buy Now</a></button>
+                <button class="productitemcartbtn"> <a href="#">Add Cart</a></button>
+            </div>
+        </div>
+        <div class="productitem">
+            <div class="productitemimg">
+                <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/512860a.jpg?ts=1690832312>
+           </div>
+            <div>
+                <div class="Productname">Colour Roach - Stash Pro</div>
+                <h3>₹50</h3>
+               <button class="productitembuybtn"> <a href="#">Buy Now</a></button>
+                <button class="productitemcartbtn"> <a href="#">Add Cart</a></button>
+            </div>
+        </div>
+        <div class="productitem">
+            <div class="productitemimg">
+                <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/63d35241-fbb8-40bb-8b95-dcb84a9656e7.jpg?ts=1740658589>
+           </div>
+            <div>
+                <div class="Productname">Black Slim Rolling Paper </div>
+                <h3>₹75</h3>
+               <button class="productitembuybtn"> <a href="#">Buy Now</a></button>
+                <button class="productitemcartbtn"> <a href="#">Add Cart</a></button>
+            </div>
+        </div>
+        <div class="productitem">
+            <div class="productitemimg">
+                <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/478728a.jpg?ts=1690814280>
+           </div>
+            <div>
+                <div class="Productname">Colour Roach - Stash Pro</div>
+                <h3>₹91</h3>
+               <button class="productitembuybtn"> <a href="#">Buy Now</a></button>
+                <button class="productitemcartbtn"> <a href="#">Add Cart</a></button>
+            </div>
+        </div>
+        <div class="productitem">
+            <div class="productitemimg">
+                <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/496996a.jpg?ts=1690814374>
+           </div>
+            <div>
+                <div class="Productname">Black Slim Rolling Paper </div>
+                <h3>₹149</h3>
+               <button class="productitembuybtn"> <a href="#">Buy Now</a></button>
+                <button class="productitemcartbtn"> <a href="#">Add Cart</a></button>
+            </div>
+        </div>
+        <div class="productitem">
+            <div class="productitemimg">
+                <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/5b811154-db15-456d-a219-13edaa288ab7.jpg?ts=1725020018>
+           </div>
+            <div>
+                <div class="Productname">Colour Roach - Stash Pro</div>
+                <h3>₹36</h3>
+               <button class="productitembuybtn"> <a href="#">Buy Now</a></button>
+                <button class="productitemcartbtn"> <a href="#">Add Cart</a></button>
+            </div>
+        </div>
+      </div>
+
+      <!-- product section3 -->
+      <section class="mainpara1">
+        <h1>Snacks & Munchies</h1>
+       </section>
+      <div class="productsection1">
+        <div class="productitem">
+            <div class="productitemimg">
+                <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/c23856bf-cdf5-475d-9545-023bff8694d3.jpg?ts=1723100848>
+           </div>
+            <div>
+                <div class="Productname">Kab's Jackpot Cheese Balls</div>
+                <h3>₹50</h3>
+                <button class="productitembuybtn"> <a href="#">Buy Now</a></button>
+                <button class="productitemcartbtn"> <a href="#">Add Cart</a></button>
+            </div>
+           
+        </div>
+        <div class="productitem">
+            <div class="productitemimg">
+                <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/5910a45b-a0b6-4487-92cb-d5f449e74db3.jpg>
+           </div>
+            <div>
+                <div class="Productname">Jacker Barbeque Potato Crisps</div>
+                <h3>₹550</h3>
+               <button class="productitembuybtn"> <a href="#">Buy Now</a></button>
+                <button class="productitemcartbtn"> <a href="#">Add Cart</a></button>
+            </div>
+        </div>
+        <div class="productitem">
+            <div class="productitemimg">
+                <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/4bf93c8a-56bc-487e-9660-cfb4082ccedb.jpg?ts=17230985734>
+           </div>
+            <div>
+                <div class="Productname">Kab's Jackpot Cheese Balls</div>
+                <h3>₹76</h3>
+               <button class="productitembuybtn"> <a href="#">Buy Now</a></button>
+                <button class="productitemcartbtn"> <a href="#">Add Cart</a></button>
+            </div>
+        </div>
+        <div class="productitem">
+            <div class="productitemimg">
+                <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/7dd25b43-94da-42ad-b719-35ad9e395705.jpg?ts=1724850850>
+           </div>
+            <div>
+                <div class="Productname">Kettle Studio Himalayan Salt</div>
+                <h3>₹91</h3>
+               <button class="productitembuybtn"> <a href="#">Buy Now</a></button>
+                <button class="productitemcartbtn"> <a href="#">Add Cart</a></button>
+            </div>
+        </div>
+        <div class="productitem">
+            <div class="productitemimg">
+                <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/bebe562d-c417-465b-9b12-4d612f48d08a.jpg?ts=1723098763>
+           </div>
+            <div>
+                <div class="Productname">Kab's Jackpot Cheese Balls</div>
+                <h3>₹28</h3>
+               <button class="productitembuybtn"> <a href="#">Buy Now</a></button>
+                <button class="productitemcartbtn"> <a href="#">Add Cart</a></button>
+            </div>
+        </div>
+        <div class="productitem">
+            <div class="productitemimg">
+                <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/59c5467f-2d57-44f8-be39-61c293c530d4.jpg?ts=1740397572>
+           </div>
+            <div>
+                <div class="Productname">Kettle Studio Himalay</div>
+                <h3>₹82</h3>
+               <button class="productitembuybtn"> <a href="#">Buy Now</a></button>
+                <button class="productitemcartbtn"> <a href="#">Add Cart</a></button>
+            </div>
+        </div>
+        <div class="productitem">
+            <div class="productitemimg">
+                <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/4bf93c8a-56bc-487e-9660-cfb4082ccedb.jpg?ts=17230985734>
+           </div>
+            <div>
+                <div class="Productname">Kab's Jackpot Cheese Balls</div>
+                <h3>₹76</h3>
+               <button class="productitembuybtn"> <a href="#">Buy Now</a></button>
+                <button class="productitemcartbtn"> <a href="#">Add Cart</a></button>
+            </div>
+        </div>
+        <div class="productitem">
+            <div class="productitemimg">
+                <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/6807f54d-f711-49ca-9635-514ac9b72d7f.jpg?ts=17248508592>
+           </div>
+            <div>
+                <div class="Productname">Jacker Barbeque Potato Crisps</div>
+                <h3>₹82</h3>
+               <button class="productitembuybtn"> <a href="#">Buy Now</a></button>
+                <button class="productitemcartbtn"> <a href="#">Add Cart</a></button>
+            </div>
+        </div>
+        <div class="productitem">
+            <div class="productitemimg">
+                <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/c7221d26-16ce-4b85-802a-b4a5aaabae13.jpg>
+           </div>
+            <div>
+                <div class="Productname">Moi Soi White Rice Paper</div>
+                <h3>₹125</h3>
+               <button class="productitembuybtn"> <a href="#">Buy Now</a></button>
+                <button class="productitemcartbtn"> <a href="#">Add Cart</a></button>
+            </div>
+        </div>
+        <div class="productitem">
+            <div class="productitemimg">
+                <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/1f3a0e5b-26f8-4f7d-a0c0-e6410f763ab5.jpg?ts=1735649560>
+           </div>
+            <div>
+                <div class="Productname">Moi Soi White Rice Paper</div>
+                <h3>₹130</h3>
+               <button class="productitembuybtn"> <a href="#">Buy Now</a></button>
+                <button class="productitemcartbtn"> <a href="#">Add Cart</a></button>
+            </div>
+        </div>
+      </div>
+
+      <!-- section4 -->
+      <section class="mainpara1">
+        <h1>Cold Drinks & Juices</h1>
+       </section>
+      <div class="productsection1">
+        <div class="productitem">
+            <div class="productitemimg">
+                <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/e69c587d-802a-40eb-a40b-a6bc9623526d.jpg?ts=1707312325>
+           </div>
+            <div>
+                <div class="Productname">Thums Up Soft Drink (750 ml)</div>
+                <h3>₹50</h3>
+                <button class="productitembuybtn"> <a href="#">Buy Now</a></button>
+                <button class="productitemcartbtn"> <a href="#">Add Cart</a></button>
+            </div>
+           
+        </div>
+        <div class="productitem">
+            <div class="productitemimg">
+                <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/175086a.jpg?ts=1688469114>
+           </div>
+            <div>
+                <div class="Productname">Amul Masti Spiced Salted </div>
+                <h3>₹55</h3>
+               <button class="productitembuybtn"> <a href="#">Buy Now</a></button>
+                <button class="productitemcartbtn"> <a href="#">Add Cart</a></button>
+            </div>
+        </div>
+        <div class="productitem">
+            <div class="productitemimg">
+                <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/9a7f01e0-e63e-407e-bfc9-449c165f7a1c.jpg?ts=1728051043>
+           </div>
+            <div>
+                <div class="Productname">Limka Soft Drink (750 ml)</div>
+                <h3>₹83</h3>
+               <button class="productitembuybtn"> <a href="#">Buy Now</a></button>
+                <button class="productitemcartbtn"> <a href="#">Add Cart</a></button>
+            </div>
+        </div>
+        <div class="productitem">
+            <div class="productitemimg">
+                <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/e24eda9c-3cc7-4e66-bc2b-80383eb85a80.jpg?ts=1715152398>
+           </div>
+            <div>
+                <div class="Productname">Frooti Mango Cold Drink </div>
+                <h3>₹62</h3>
+               <button class="productitembuybtn"> <a href="#">Buy Now</a></button>
+                <button class="productitemcartbtn"> <a href="#">Add Cart</a></button>
+            </div>
+        </div>
+        <div class="productitem">
+            <div class="productitemimg">
+                <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/e55f93f3-0f56-40c4-b53b-8d980c18565b.jpg?ts=1725950243>
+           </div>
+            <div>
+                <div class="Productname">Thums Up Soft Drink (750 ml)</div>
+                <h3>₹196</h3>
+               <button class="productitembuybtn"> <a href="#">Buy Now</a></button>
+                <button class="productitemcartbtn"> <a href="#">Add Cart</a></button>
+            </div>
+        </div>
+        <div class="productitem">
+            <div class="productitemimg">
+                <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/0f87f19e-66da-48cd-8c75-343abf732948.jpg?ts=1707312325>
+           </div>
+            <div>
+                <div class="Productname">Sprite Lime Flavored 750 ml</div>
+                <h3>₹46</h3>
+               <button class="productitembuybtn"> <a href="#">Buy Now</a></button>
+                <button class="productitemcartbtn"> <a href="#">Add Cart</a></button>
+            </div>
+        </div>
+        <div class="productitem">
+            <div class="productitemimg">
+                <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/e24eda9c-3cc7-4e66-bc2b-80383eb85a80.jpg?ts=1715152398>
+           </div>
+            <div>
+                <div class="Productname">Frooti Mango Cold Drink </div>
+                <h3>₹62</h3>
+               <button class="productitembuybtn"> <a href="#">Buy Now</a></button>
+                <button class="productitemcartbtn"> <a href="#">Add Cart</a></button>
+            </div>
+        </div>>
+        <div class="productitem">
+            <div class="productitemimg">
+                <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/images/products/sliding_image/191439a.jpg?ts=1689328443>
+           </div>
+            <div>
+                <div class="Productname">Amul Sweet Milk Lassi</div>
+                <h3>₹205</h3>
+               <button class="productitembuybtn"> <a href="#">Buy Now</a></button>
+                <button class="productitemcartbtn"> <a href="#">Add Cart</a></button>
+            </div>
+        </div>
+        <div class="productitem">
+            <div class="productitemimg">
+                <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/6b98633c-7c6a-4708-a372-e2b49da568ab.jpg?ts=1707312322>
+           </div>
+            <div>
+                <div class="Productname">Coca-Cola Soft Drink</div>
+                <h3>₹175</h3>
+               <button class="productitembuybtn"> <a href="#">Buy Now</a></button>
+                <button class="productitemcartbtn"> <a href="#">Add Cart</a></button>
+            </div>
+        </div>
+        <div class="productitem">
+            <div class="productitemimg">
+                <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/3c0a713e-ba6e-433f-a004-a98bfb513602.jpg?ts=1716470396>
+           </div>
+            <div>
+                <div class="Productname">Sprite Lime Flavoure Drink </div>
+                <h3>₹110</h3>
+               <button class="productitembuybtn"> <a href="#">Buy Now</a></button>
+                <button class="productitemcartbtn"> <a href="#">Add Cart</a></button>
+            </div>
+        </div>
+      </div>
+        <!-- section5 -->
+        <section class="mainpara1">
+            <h1>Candies & Gums</h1>
+           </section>
+          <div class="productsection1">
+            <div class="productitem">
+                <div class="productitemimg">
+                    <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/b8760532-ff5b-4451-aacf-8037ec6da880.jpg?ts=1732624518>
+               </div>
+                <div>
+                    <div class="Productname">Chupa Chups Sour Bites</div>
+                    <h3>₹15</h3>
+                    <button class="productitembuybtn"> <a href="#">Buy Now</a></button>
+                    <button class="productitemcartbtn"> <a href="#">Add Cart</a></button>
+                </div>
+               
+            </div>
+            <div class="productitem">
+                <div class="productitemimg">
+                    <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/18bb0b76-c636-4bd1-8ea8-a5ac84f3520a.jpg?ts=1732624516>
+               </div>
+                <div>
+                    <div class="Productname">Strawberry Flavour  Candy</div>
+                    <h3>₹75</h3>
+                   <button class="productitembuybtn"> <a href="#">Buy Now</a></button>
+                    <button class="productitemcartbtn"> <a href="#">Add Cart</a></button>
+                </div>
+            </div>
+            <div class="productitem">
+                <div class="productitemimg">
+                    <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/5cf43365-0827-4882-bcb3-19e611e5e1a9.jpg?ts=1735822670>
+               </div>
+                <div>
+                    <div class="Productname">Dabur Hajmola Regular Tablets</div>
+                    <h3>₹38</h3>
+                   <button class="productitembuybtn"> <a href="#">Buy Now</a></button>
+                    <button class="productitemcartbtn"> <a href="#">Add Cart</a></button>
+                </div>
+            </div>
+            <div class="productitem">
+                <div class="productitemimg">
+                    <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/0cdb751e-a797-4f76-ba3d-00a4c6130c19.jpg?ts=1710154019>
+               </div>
+                <div>
+                    <div class="Productname">Frooti Mango Cold Drink </div>
+                    <h3>₹62</h3>
+                   <button class="productitembuybtn"> <a href="#">Buy Now</a></button>
+                    <button class="productitemcartbtn"> <a href="#">Add Cart</a></button>
+                </div>
+            </div>
+            <div class="productitem">
+                <div class="productitemimg">
+                    <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/aa4c477e-08d8-479d-be21-76e061e13c0d.jpg?ts=1718169096>
+               </div>
+                <div>
+                    <div class="Productname">Pulse Kachcha  Mango Candy</div>
+                    <h3>₹56</h3>
+                   <button class="productitembuybtn"> <a href="#">Buy Now</a></button>
+                    <button class="productitemcartbtn"> <a href="#">Add Cart</a></button>
+                </div>
+            </div>
+            <div class="productitem">
+                <div class="productitemimg">
+                    <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/ce3feb3c-e228-43ac-864d-68bded3e34f6.jpg?ts=1733987329>
+               </div>
+                <div>
+                    <div class="Productname">Boomer Krunch Chewing Guml</div>
+                    <h3>₹102</h3>
+                   <button class="productitembuybtn"> <a href="#">Buy Now</a></button>
+                    <button class="productitemcartbtn"> <a href="#">Add Cart</a></button>
+                </div>
+            </div>
+            <div class="productitem">
+                <div class="productitemimg">
+                    <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/5cf43365-0827-4882-bcb3-19e611e5e1a9.jpg?ts=1735822670>
+               </div>
+                <div>
+                    <div class="Productname">Dabur Hajmola Regular Tablets</div>
+                    <h3>₹38</h3>
+                   <button class="productitembuybtn"> <a href="#">Buy Now</a></button>
+                    <button class="productitemcartbtn"> <a href="#">Add Cart</a></button>
+                </div>
+            </div>
+            <div class="productitem">
+                <div class="productitemimg">
+                    <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/7eda1587-f308-4927-8ddd-4d80798c74ca.jpg?ts=1728244527>
+               </div>
+                <div>
+                    <div class="Productname">Boomer Krunch Chewing Gum</div>
+                    <h3>₹200</h3>
+                   <button class="productitembuybtn"> <a href="#">Buy Now</a></button>
+                    <button class="productitemcartbtn"> <a href="#">Add Cart</a></button>
+                </div>
+            </div>
+            <div class="productitem">
+                <div class="productitemimg">
+                    <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/app/assets/products/sliding_images/jpeg/759d0d59-6626-456e-ba51-f8a16659b494.jpg?ts=1710154020>
+               </div>
+                <div>
+                    <div class="Productname">Alpenliebe Pop Assorted Flavours</div>
+                    <h3>₹171</h3>
+                   <button class="productitembuybtn"> <a href="#">Buy Now</a></button>
+                    <button class="productitemcartbtn"> <a href="#">Add Cart</a></button>
+                </div>
+            </div>
+            <div class="productitem">
+                <div class="productitemimg">
+                    <img src=https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/da/cms-assets/cms/product/ce3feb3c-e228-43ac-864d-68bded3e34f6.jpg?ts=1733987329>
+               </div>
+                <div>
+                    <div class="Productname">Dabur Digestive Tablets</div>
+                    <h3>₹110</h3>
+                   <button class="productitembuybtn"> <a href="#">Buy Now</a></button>
+                    <button class="productitemcartbtn"> <a href="#">Add Cart</a></button>
+                </div>
+            </div>
+          </div>
+
+<!-- footer section -->
+          <footer>
+            <div class="footer-mid">
+                <div class="footrow-1">
+                    <div class="row-1left">
+                        <h2 class="footpara">Useful Links</h2>
+                        <div class="UsefulLinks">
+                            <ul>
+                                    <li> <a href="#">Franchise</a></li>
+                                    <li> <a href="#">FAQs</a></li>
+                                    <li> <a href="#"> Contact</a></li>
+                                    <li> <a href="#">PrintStore</a></li>
+                                    <li><a href="#">Munchies</a></li>
+                                    <li><a href="#"> Deliver</a></li>  
+                            </ul>
+                            <ul>
+                                <li> <a href="#">Mobile</a></li>
+                                <li> <a href="#">FAQs</a></li>
+                                <li> <a href="#"> Blog</a></li>
+                                <li> <a href="#">Prin</a></li>
+                                <li><a href="#">Press</a></li>
+                                <li><a href="#">Mobile </a></li>  
+                                 </ul>
+                             <ul>
+                            <li> <a href="#">Resources</a></li>
+                            <li> <a href="#">FAQs</a></li>
+                            <li> <a href="#"> Contact</a></li>
+                            <li> <a href="#">PrintStore</a></li>
+                            <li><a href="#">Deliver</a></li>
+                            <li><a href="#"> Books </a></li>  
+                            
+                             </ul>
+                        </div>
+                    </div>
+                    <div class="row-1right">
+                        <div class="footpara2">
+                            <h2>Categories</h2>
+                           <h4><a href="#" class="seeall">see all</a></h4>
+                        </div>
+                        <div class="UsefulLinks links2">
+                            <ul>
+                                    <li> <a href="#">Vegetables & Fruits</a></li>
+                                    <li> <a href="#">Bakery  Biscuits</a></li>
+                                    <li> <a href="#"> Dry Fruits, </a></li>
+                                    <li> <a href="#">Cleaning Essentials</a></li>
+                                    <li><a href="#">Stationery Needs</a></li>
+                                    <li><a href="#"> Toys & Games</a></li>  
+                                    <li> <a href="#">Cleaning Essentials</a></li>
+                                    <li> <a href="#">Vegetables  Fruits</a></li>
+                                    
+                            </ul>
+                            <ul>
+                                <li> <a href="#">Beauty & Cosmetics</a></li>
+                                <li> <a href="#">Cleaning Essentials</a></li>
+                                <li><a href="#">E-Gift Cards</a></li> 
+                                <li> <a href="#">E-Gift Cards</a></li>
+                                <li><a href="#">Vegetables Fruits</a></li>
+                                <li><a href="#">Cleaning Essentials </a></li>  
+                                <li> <a href="#">Tea, Coffee & Health Drinks</a></li>
+                                <li><a href="#">Fashion Accessories</a></li>
+                                 
+                                 </ul>
+                                 <ul>
+                                    <li> <a href="#">Vegetables Fruits</a></li>
+                                    <li> <a href="#">Bakery & Biscuits</a></li>
+                                   
+                                    <li> <a href="#">Cleaning Essentials</a></li>
+                                    <li><a href="#">Stationery Needs</a></li>
+                                    <li><a href="#"> Toys & Games</a></li>  
+                                    <li> <a href="#">Cleaning Essentials</a></li>
+                                    <li> <a href="#">Vegetables Fruits</a></li>
+                                    <li> <a href="#">Pet Care</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footrow-2">
+               <p> Blink Commerce Private Limited, 2016-2025</p>
+               <div>
+                <img width="100px" src="https://blinkit.com/d61019073b700ca49d22.png" alt="">
+                <img  width="100px" src="https://blinkit.com/8ed033800ea38f24c4f0.png" alt="">
+               </div>
+               <div class="sicon">
+                 <a href="#"> <i class="fa-brands fa-facebook "></i></a>
+                      
+                       <a href="#">   <i class="fa-brands fa-linkedin "></i></a>
+                       <a href="#">  <i class="fa-brands fa-square-instagram "></i></a>
+                    </div>
+                    </div>
+                </div>
+                <div class="footrow-3">
+                     <h2>©All Rights Reserved || My Responsive Website</h2>
+                </div>
+            </div>
+          </footer>       
+      
+</body>
+
+</html>

@@ -1,0 +1,260 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+header{
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    gap:20px;
+    background-color: aliceblue;
+}
+
+.headerleft{
+    display: flex;
+    align-items: center;
+    gap: 4%;
+    width: 24%;
+
+}
+
+.logo{
+    border-right: 1px solid #ccc;
+    padding-right: 50px;
+    padding: 15px;
+}
+.searchbox{
+   flex-grow: 1;
+   display: flex;
+   align-items: center;
+   
+}
+.searchbtn{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    border-radius: 10px;
+    text-align: left;
+    padding-left: 1%;
+    border: 1px solid #ccc;
+    align-items: center;
+    gap: 5px;
+}
+.searchbtninput{
+    border: none;
+    background: transparent;
+    font-size: 120%;
+    outline: none;
+}
+.headerbtn{
+    display: flex;
+    gap: 10px;
+    margin-right: 50px;
+    align-items: center;
+
+}
+.headerbtn1{
+    padding: 2%;
+    width: 100px;
+    border: none;
+    background: transparent; 
+    outline: none; 
+    font-size: 20px;
+}
+.headerbtn2{
+    padding: 2%;
+    font-size: 20px;
+    width: 100px;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    border-radius: 7px;
+    background-color: #1fb907;
+    border: none;
+    color: aliceblue;
+}
+.addtocart{
+    font-size: 15px;
+}
+a{
+    text-decoration: none;
+    color: rgb(12, 12, 12);
+}
+.banner{
+    margin: auto;
+    max-width: 1280px;
+    padding-top: 65px;
+}
+.banner img{
+    width: 100%;
+}
+body{
+    height: 200vh;
+}
+.baneritem{
+    max-width: 1280px;
+    display: flex;
+    margin: auto;
+    gap: 2%;
+}
+.baneritems{
+   flex-basis: 28%;
+   margin-left: 1%;
+}
+.baneritems img{
+    width: 100%;
+    
+ }
+
+ /* catagory item */
+ .catagorymain{
+    display: flex;
+   margin: auto;
+    max-width: 1280px;
+    flex-wrap: wrap;
+ }
+ .catagoryitem{
+    flex-basis: 10%;
+    
+ }
+ .catagoryitem img{
+  width: 100%;
+ }
+ .mainpara1{
+   margin: auto;
+   max-width: 1280px;
+   padding-left: 1%;
+   padding-top: 2%;
+
+ }
+
+ /* productsection1 */
+ .productsection1{
+    max-height: 260px;
+    max-width: 1280px;
+    margin: auto;
+    margin-top: 2%;
+    /* border: 2px solid peru; */
+    display: flex;
+    overflow-x: auto;
+   text-align: center;
+ 
+    
+ }
+ .productsection1 .productitem{
+    min-width: 150px;
+    height: 240px;
+    text-align: center;
+    /* background-color: #1fb907; */
+    
+    margin-right: 1%;
+    margin-left: 1%;
+    border: 2px solid rgb(239, 99, 6);
+    border-radius: 3px;
+    background-color:rgb(198, 193, 193);
+    box-shadow: 1px 1px 1px 1px bisque;
+   
+
+ }
+ .productsection1::-webkit-scrollbar{
+    width: 0px;
+ }
+ .productitemimg img{
+    width: 100%;
+    height: 120px;
+    /* background-color: aqua; */
+ }
+ .productitembuybtn{
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 6%;
+    background-color: #1fb907; 
+    border: none;
+    margin-right: 1px;
+    font-weight: 600;
+    
+ }
+ .productitemcartbtn{
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 6%;
+    background-color: #f2bb08;
+    border: none;
+    margin-left: 1px;
+    font-weight: 600;
+ }
+ .Productname{
+    padding-bottom: 5%;
+    font-weight: 600;
+    color: rgb(56, 3, 3);
+ }
+
+ footer{
+   padding-top: 40px;
+ }
+ .footer-mid{
+   max-width: 1280px;
+   margin: auto;
+ }
+ .footrow-1{
+   width: 100%;
+   display: flex;
+   margin-left: 1%;
+   gap: 100px;
+ }
+ .row-1left{
+   flex-basis: 30%;
+ }
+
+ .UsefulLinks{
+   display: flex;
+   gap:2px;
+ }
+ .UsefulLinks ul{
+   flex-basis: 33%;
+   list-style: none;
+   line-height: 32px;
+   color: darkgrey;
+   font-size: 18px;
+ }
+ .row-1right{
+   flex-basis: 70%;
+ }
+ .footpara{
+   margin-bottom: 20px;
+   letter-spacing: 1px;
+ }
+ .footpara2{
+   display: flex;
+   align-items: center;
+   gap: 20px;
+ }
+ .seeall{
+   color: #1fb907;
+ }
+ .links2{
+   margin-top: 5%;
+   
+ }
+ .footrow-3{
+   width: 100%;
+   background-color: #04040b;
+   padding: 1%;
+   color:aliceblue;
+   text-align: center;
+ }
+.footrow-2{
+   max-width: 100%;
+   padding-top: 2%;
+   padding-bottom: 1%;
+   margin: auto;
+   display: flex;
+   font-weight: 600;
+   gap: 50px;
+   align-items: center;
+   justify-content: center;
+}

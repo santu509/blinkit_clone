@@ -1,0 +1,114 @@
+@media only screen and (min-width:200px) and (max-width:575px)
+{
+    header{
+        flex-direction: column;
+        align-items: stretch;
+        gap: 2px;
+    }
+    .headerleft{
+        justify-content: center;
+        padding-top: 0%;
+        font-size:12px;
+        width: 100%;
+    }
+    .searchbtn{
+        width: 50%;
+        font-size: 10px;
+       margin-left: 3px;
+    }
+    .headerbtn{
+        display: flex;
+        width: 20%;
+    }
+    .headerbtn2{
+        padding: 2px;
+    }
+    .headerbtn1{
+        border: none;
+        margin-left: 5px;
+        border-radius: 7px;
+        background-color: rgb(73, 203, 250);
+    }
+    .searchbox{
+        padding-bottom: 5px;
+    }
+    .banner{
+        margin: auto;
+        max-width: 1280px;
+        padding-top: 105px;
+    }
+    .banner img{
+        width: 100%;
+        height: 100px;
+    }
+    .baneritem{
+        flex-direction: column;
+        margin: 0;
+        max-width: 100%;
+        padding-left: 2%;
+        padding-right: 3%;
+    }
+    .catagoryitem{
+        flex-basis: 25%;
+        
+     }
+     .mainpara1{
+        padding-top: 5%;
+        font-size: 12px;
+     }
+     .productsection1 .productitem{
+      
+        /* background-color: #1fb907; */
+        margin-left: 2%;
+        margin-right: 2%;
+       
+    
+     }
+     .productitembuybtn{
+        border-radius: 5px;
+        padding: 5px;
+        margin-top: 2%;
+        background-color: #1fb907;
+        border: none;
+        margin-right: 1px;
+        font-weight: 600;
+     }
+     .productitemcartbtn{
+        border-radius: 5px;
+        padding: 5px;
+        margin-top: 2%;
+        background-color: #f2bb08;
+        border: none;
+        margin-left: 1px;
+        font-weight: 600;
+     }
+     .Productname{
+        padding-bottom: 2%;
+        font-weight: 600;
+     }
+    .baneritem{
+      flex-direction: column;
+     }
+     .footrow-1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+       padding: 10px;
+      }
+      .footrow-2{
+        flex-direction: column;
+        gap: 5px;
+      }
+      /* .searchbtninput{
+        display: none;
+      } */
+    
+}
+/* ipad */
+
+@media only screen and (min-width:576px) and (max-width:991px)
+{
+    .headadd{
+       display: none;
+    }
+}
